@@ -6,23 +6,23 @@
 
 3. from matplotlib import pyplot as plt
 
-pada line 1,2 dan 3 untuk Mengimpor library yang diperlukan: OpenCV untuk pemrosesan gambar, NumPy untuk operasi array, dan Matplotlib untuk menampilkan gambar.
+### pada line 1,2 dan 3 untuk Mengimpor library yang diperlukan: OpenCV untuk pemrosesan gambar, NumPy untuk operasi array, dan Matplotlib untuk menampilkan gambar.
 
 4. image = cv2.imread('Pawai SMP.jpg')
 
-pada line 4 untuk Membaca gambar dari file dengan path yang diberikan. Gambar dibaca dalam mode warna (BGR).
+### pada line 4 untuk Membaca gambar dari file dengan path yang diberikan. Gambar dibaca dalam mode warna (BGR).
 
 5. image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-pada line 5 ini untuk Mengkonversi gambar dari BGR (format default OpenCV) ke RGB (format yang digunakan oleh Matplotlib).
+### pada line 5 ini untuk Mengkonversi gambar dari BGR (format default OpenCV) ke RGB (format yang digunakan oleh Matplotlib).
 
 6. image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-pada line 6 ini untuk Mengkonversi gambar dari BGR ke grayscale untuk keperluan median filtering.
+### pada line 6 ini untuk Mengkonversi gambar dari BGR ke grayscale untuk keperluan median filtering.
 
 7. median_filtered = cv2.medianBlur(image_gray, 5)
 
-lalu pada line 7 berfungsi untuk Menerapkan median filtering dengan kernel 5x5 pada gambar grayscale. Filter median menggantikan nilai piksel dengan median dari nilai nilai piksel di sekitarnya, yang membantu mengurangi noise.
+### lalu pada line 7 berfungsi untuk Menerapkan median filtering dengan kernel 5x5 pada gambar grayscale. Filter median menggantikan nilai piksel dengan median dari nilai nilai piksel di sekitarnya, yang membantu mengurangi noise.
 
 8. plt.figure(figsize=(10, 5))
 
@@ -40,7 +40,7 @@ lalu pada line 7 berfungsi untuk Menerapkan median filtering dengan kernel 5x5 p
 
 15. plt.show()
 
-untuk line 8,9,10,11,12,13,14,15 digunakan untuk Menampilkan gambar asli berwarna dan hasil median filtering dalam mode grayscale menggunakan Matplotlib.
+### untuk line 8,9,10,11,12,13,14,15 digunakan untuk Menampilkan gambar asli berwarna dan hasil median filtering dalam mode grayscale menggunakan Matplotlib.
 
 # ----------------------------------------------------------------
 
@@ -52,7 +52,7 @@ untuk line 8,9,10,11,12,13,14,15 digunakan untuk Menampilkan gambar asli berwarn
 
 3. from matplotlib import pyplot as plt
 
-pada line 1,2,3 digunakan untuk Mengimpor library yang diperlukan: OpenCV untuk pemrosesan gambar, NumPy untuk operasi array, dan Matplotlib untuk menampilkan gambar.
+### pada line 1,2,3 digunakan untuk Mengimpor library yang diperlukan: OpenCV untuk pemrosesan gambar, NumPy untuk operasi array, dan Matplotlib untuk menampilkan gambar.
 
 7. def mean_filtering(image, kernel_size):
 
@@ -82,7 +82,7 @@ pada line 1,2,3 digunakan untuk Mengimpor library yang diperlukan: OpenCV untuk 
 
 15. return mean_filtered
 
-pada line 7,8,9,10,11,12,13,14,15 ini merupakan fungsi dari mean filtering yang mana :
+### pada line 7,8,9,10,11,12,13,14,15 ini merupakan fungsi dari mean filtering yang mana :
 
 - Padding Gambar: Menambahkan padding pada gambar untuk menghindari masalah di tepi gambar.
 
@@ -96,11 +96,11 @@ pada line 7,8,9,10,11,12,13,14,15 ini merupakan fungsi dari mean filtering yang 
 
 16. image = cv2.imread('Pawai SMP.jpg', cv2.IMREAD_GRAYSCALE)
 
-line 16 untuk Membaca gambar dalam mode grayscale.
+### line 16 untuk Membaca gambar dalam mode grayscale.
 
 17. mean_filtered = mean_filtering(image, 5)
 
-line 17 untuk Menerapkan mean filtering dengan kernel 5x5.
+### line 17 untuk Menerapkan mean filtering dengan kernel 5x5.
 
 18. plt.figure(figsize=(10, 5))
 
@@ -118,4 +118,4 @@ line 17 untuk Menerapkan mean filtering dengan kernel 5x5.
 
 25. plt.show()
 
-Untuk line 18,19,20,21,22,23,24,25 untuk Menampilkan gambar asli dalam mode grayscale dan hasil mean filtering menggunakan Matplotlib.
+### Untuk line 18,19,20,21,22,23,24,25 untuk Menampilkan gambar asli dalam mode grayscale dan hasil mean filtering menggunakan Matplotlib.
