@@ -94,6 +94,7 @@
 
 - Rata-rata Nilai Piksel: Menghitung rata-rata nilai dari neighborhood dan menetapkannya ke piksel hasil.
 
+
 16. image = cv2.imread('Pawai SMP.jpg', cv2.IMREAD_GRAYSCALE)
 
 ### line 16 untuk Membaca gambar dalam mode grayscale.
