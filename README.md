@@ -42,7 +42,7 @@ lalu pada line 7 berfungsi untuk Menerapkan median filtering dengan kernel 5x5 p
 
 untuk line 8,9,10,11,12,13,14,15 digunakan untuk Menampilkan gambar asli berwarna dan hasil median filtering dalam mode grayscale menggunakan Matplotlib.
 
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------
 
 # Mean Filtering
 
